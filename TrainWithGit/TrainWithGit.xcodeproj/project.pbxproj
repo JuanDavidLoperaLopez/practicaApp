@@ -14,6 +14,7 @@
 		AC2775DE1CDEFEA10015834D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC2775DC1CDEFEA10015834D /* LaunchScreen.storyboard */; };
 		AC2775E91CDEFEA10015834D /* TrainWithGitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2775E81CDEFEA10015834D /* TrainWithGitTests.swift */; };
 		AC2775F41CDEFEA10015834D /* TrainWithGitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2775F31CDEFEA10015834D /* TrainWithGitUITests.swift */; };
+		AC2776051CDF02420015834D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2776041CDF02420015834D /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		AC2775EF1CDEFEA10015834D /* TrainWithGitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrainWithGitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2775F31CDEFEA10015834D /* TrainWithGitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainWithGitUITests.swift; sourceTree = "<group>"; };
 		AC2775F51CDEFEA10015834D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC2776041CDF02420015834D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +99,11 @@
 		AC2775D21CDEFEA10015834D /* TrainWithGit */ = {
 			isa = PBXGroup;
 			children = (
+				AC2776031CDEFEE80015834D /* Controllers */,
+				AC2776021CDEFEDD0015834D /* Models */,
+				AC2776011CDEFED30015834D /* Views */,
 				AC2775D31CDEFEA10015834D /* AppDelegate.swift */,
-				AC2775D51CDEFEA10015834D /* ViewController.swift */,
-				AC2775D71CDEFEA10015834D /* Main.storyboard */,
 				AC2775DA1CDEFEA10015834D /* Assets.xcassets */,
-				AC2775DC1CDEFEA10015834D /* LaunchScreen.storyboard */,
 				AC2775DF1CDEFEA10015834D /* Info.plist */,
 			);
 			path = TrainWithGit;
@@ -123,6 +125,31 @@
 				AC2775F51CDEFEA10015834D /* Info.plist */,
 			);
 			path = TrainWithGitUITests;
+			sourceTree = "<group>";
+		};
+		AC2776011CDEFED30015834D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC2775DC1CDEFEA10015834D /* LaunchScreen.storyboard */,
+				AC2775D71CDEFEA10015834D /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AC2776021CDEFEDD0015834D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AC2776031CDEFEE80015834D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC2775D51CDEFEA10015834D /* ViewController.swift */,
+				AC2776041CDF02420015834D /* MainViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC2776051CDF02420015834D /* MainViewController.swift in Sources */,
 				AC2775D61CDEFEA10015834D /* ViewController.swift in Sources */,
 				AC2775D41CDEFEA10015834D /* AppDelegate.swift in Sources */,
 			);
