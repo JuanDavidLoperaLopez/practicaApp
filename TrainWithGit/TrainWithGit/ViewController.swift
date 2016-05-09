@@ -22,7 +22,9 @@ class ViewController: UIViewController {
             let datos:[String] = ["juan","1234"]
             performSegueWithIdentifier("uno", sender: datos)
         }else{
-            
+            let alert = UIAlertController(title: "Error", message: "Usuario o contraseña erronea", preferredStyle: .Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
         }
         
     }

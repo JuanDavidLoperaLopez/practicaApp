@@ -28,7 +28,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ingrese su contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QfK-YP-XM4">
                                         <rect key="frame" x="0.0" y="36" width="200" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eI-Bf-SsK">
                                         <rect key="frame" x="0.0" y="72" width="200" height="30"/>
@@ -42,8 +42,8 @@
                                     <constraint firstAttribute="width" constant="200" id="EDo-dQ-F02"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nx-7f-gGz">
-                                <rect key="frame" x="200" y="372" width="163" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nx-7f-gGz">
+                                <rect key="frame" x="219" y="372" width="163" height="30"/>
                                 <state key="normal" title="Crear una cuenta nueva"/>
                                 <connections>
                                     <segue destination="39m-WV-ITM" kind="show" id="a6u-AN-Ai6"/>
@@ -53,7 +53,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Z68-Mk-TnN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DBV-Aa-yRy"/>
+                            <constraint firstItem="0nx-7f-gGz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ixa-Ho-ecc"/>
                             <constraint firstItem="Z68-Mk-TnN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pWU-5Z-Q0M"/>
+                            <constraint firstItem="0nx-7f-gGz" firstAttribute="top" secondItem="Z68-Mk-TnN" secondAttribute="bottom" constant="21" id="sFJ-gq-eVn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Iniciar Sesion" id="BMn-zQ-k4w"/>
@@ -90,7 +92,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o2f-nc-p3v">
                                         <rect key="frame" x="0.0" y="42" width="200" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDS-AM-Sa1">
                                         <rect key="frame" x="0.0" y="84" width="200" height="30"/>
