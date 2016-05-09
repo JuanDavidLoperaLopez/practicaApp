@@ -42,6 +42,13 @@
                                     <constraint firstAttribute="width" constant="200" id="EDo-dQ-F02"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nx-7f-gGz">
+                                <rect key="frame" x="200" y="372" width="163" height="30"/>
+                                <state key="normal" title="Crear una cuenta nueva"/>
+                                <connections>
+                                    <segue destination="39m-WV-ITM" kind="show" id="a6u-AN-Ai6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -59,6 +66,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1324" y="396"/>
+        </scene>
+        <!--Crear cuenta-->
+        <scene sceneID="3R9-RZ-gOy">
+            <objects>
+                <viewController id="39m-WV-ITM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q4L-yg-4ax"/>
+                        <viewControllerLayoutGuide type="bottom" id="IfD-Pi-cSU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oqC-eL-fW2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="FUO-2K-Ksa">
+                                <rect key="frame" x="200" y="243" width="200" height="114"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="diR-CF-tcz">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o2f-nc-p3v">
+                                        <rect key="frame" x="0.0" y="42" width="200" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDS-AM-Sa1">
+                                        <rect key="frame" x="0.0" y="84" width="200" height="30"/>
+                                        <state key="normal" title="Crear"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="w8s-lu-oQX"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FUO-2K-Ksa" firstAttribute="centerX" secondItem="oqC-eL-fW2" secondAttribute="centerX" id="9Jn-Pc-gJM"/>
+                            <constraint firstItem="FUO-2K-Ksa" firstAttribute="centerY" secondItem="oqC-eL-fW2" secondAttribute="centerY" id="Rco-Zv-u6o"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Crear cuenta" id="Ef6-hh-Hdf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B8Q-t1-Vfc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1324" y="1105"/>
         </scene>
         <!--Entro-->
         <scene sceneID="1gr-Kb-cBA">
