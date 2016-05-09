@@ -10,6 +10,13 @@ import UIKit
 
 class NewUserViewController: UIViewController {
 
+    @IBOutlet weak var contraLb: UITextField!
+    @IBOutlet weak var nombreLb: UITextField!
+    @IBAction func crear(sender: AnyObject) {
+        
+        let user:[String] = [nombreLb.text!,contraLb.text!]
+        performSegueWithIdentifier("new", sender: user)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

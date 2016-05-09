@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     //MARK: - IBActions
 
     @IBAction func EntrarBtn(sender: AnyObject) {
+        
         if nameTextField.text == "juan" && passwordTextField.text == "1234"{
             let datos:[String] = ["juan","1234"]
             performSegueWithIdentifier("uno", sender: datos)

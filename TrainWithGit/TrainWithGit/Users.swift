@@ -17,5 +17,4 @@ class Users {
         self.password = password
     }
     
-    
 }

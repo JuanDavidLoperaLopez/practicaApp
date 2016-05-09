@@ -70,7 +70,7 @@
         <!--Crear cuenta-->
         <scene sceneID="3R9-RZ-gOy">
             <objects>
-                <viewController id="39m-WV-ITM" sceneMemberID="viewController">
+                <viewController id="39m-WV-ITM" customClass="NewUserViewController" customModule="TrainWithGit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Q4L-yg-4ax"/>
                         <viewControllerLayoutGuide type="bottom" id="IfD-Pi-cSU"/>
@@ -95,6 +95,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDS-AM-Sa1">
                                         <rect key="frame" x="0.0" y="84" width="200" height="30"/>
                                         <state key="normal" title="Crear"/>
+                                        <connections>
+                                            <action selector="crear:" destination="39m-WV-ITM" eventType="touchUpInside" id="IMt-uu-Mh2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -109,6 +112,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Crear cuenta" id="Ef6-hh-Hdf"/>
+                    <connections>
+                        <outlet property="contraLb" destination="o2f-nc-p3v" id="6DJ-38-jMy"/>
+                        <outlet property="nombreLb" destination="diR-CF-tcz" id="v8d-Ge-ArL"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="new" id="Maa-IB-POb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B8Q-t1-Vfc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -167,4 +175,7 @@
             <point key="canvasLocation" x="529" y="396"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Maa-IB-POb"/>
+    </inferredMetricsTieBreakers>
 </document>
